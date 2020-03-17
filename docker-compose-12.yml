@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web:
+    image: node:12-alpine
+    volumes:
+      - "./:/home/node/app"
+    working_dir: /home/node/app
+    command: yarn start
